@@ -1,0 +1,502 @@
+
+/* FUENTES */
+
+@font-face {
+    font-family: simsum;
+    src: url('../fuentes/simsunextb.ttf');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: sitka;
+    src: url('../fuentes/Sitka.ttc');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/* INICIO */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header .fondo{
+    width: 100%;
+    height: 592px;
+    background-image: url('../img/portadaHeader.jpg');
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .66);
+    background-blend-mode: soft-light;
+    }
+
+ header .fondo .textoHeader{
+    margin-top: 205px;
+     border: 1px solid #4D4747;
+     border-radius: 6px;
+     width: 490px;
+     height: 150px;
+     text-align: center;
+ }
+
+ header .fondo .textoHeader .cajaHeader{
+     max-width: 490px;
+ }
+
+  header .fondo .textoHeader p{
+     /* position: relative;
+     float: left; */
+     margin: 20px auto;
+     font-size: 50px;
+     font-family: simsum;
+
+ }
+/* 
+ header .fondo .textoHeader p span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left: 1px solid #fff;
+
+    animation: maquina 5s infinite alternate steps(28);
+ } */
+
+ /* header .fondo .textoHeader .maquinaEscribir{
+    position: relative;
+    float: left;
+    margin: 20px auto;
+    font-size: 50px;
+    font-family: simsum;
+ } */
+
+ /* header .fondo .textoHeader .maquinaEscribir::after{
+    content: "";
+    border: 1px solid #fff;
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquina 5s infinite alternate steps(28);
+ }
+
+
+ @keyframes maquina {
+     from {
+         width: 100%;
+     }
+     to{
+         width: 0;
+     }
+ } */
+
+ /* MENÚ */
+
+header nav{
+    width: 100%;
+    margin-top: 0px;
+}
+
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: right;
+    font-family: simsum;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    background: rgba(77, 77, 77, 0.356);
+
+}
+
+/* ACERCA DE  */
+
+#acercaDe{
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+
+#acercaDe article {
+    width: 100%;
+    overflow: hidden;
+}
+
+.titulo{
+    font-family: simsum;
+    font-size: 30px;
+}
+
+#acercaDe article .titulo{
+    position: relative;
+    width: 830px;
+    margin: 50px auto;
+}
+
+#acercaDe article .titulo::after,#acercaDe article .titulo::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: #4D4747;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all .3s ease-in;
+}
+
+#acercaDe article .titulo:hover::after,#acercaDe article .titulo:hover::before{
+    transform: scale(1);
+}
+
+#acercaDe article .titulo::before{
+   left: 380px;
+}
+
+#acercaDe article .titulo::after{
+    right: 30px;
+}
+
+#acercaDe article .texto{
+    margin: 50px auto;
+    font-family: sitka;
+    font-size: 16px;
+    width: 830px;
+}
+
+#acercaDe article img{
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 50px;
+    float: left;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+
+/* EXPLORA */
+
+#explora{
+background-image: url('../img/portadaExplora.jpg');
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+line-height: 50px;
+background-color: rgba(0, 0, 0, .66);
+background-blend-mode: soft-light;
+margin-bottom: 50px;
+text-align: center;
+}
+
+#explora .titulo{
+    color: #fff;
+    margin-bottom: 50px;
+    
+}
+
+#explora .contenedorExplora{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#explora .contenedorExplora .caja{
+    display: inline-block;
+    width: 350px;
+    height: 420px;
+    margin-right: 101px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#explora .contenedorExplora .caja:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+}
+
+#explora .contenedorExplora .caja img{
+    margin-top: 10px;
+    width: 255px;
+    height: 255px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.uno{
+    margin-left: 101px;
+}
+
+.tres{
+    margin-right: 200px;
+}
+
+.tituloCatalogo{
+    font-size: 18px;
+    font-family: simsum;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.textoCatalogo{
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: simsums;
+    color: #fff;
+}
+
+
+/* CONTACTO */
+
+#contacto{
+    width: 100%;
+    text-align: center;
+}
+
+#contacto .titulo{
+    margin-bottom: 50px;
+}
+
+#contacto .formulario{
+    background: #fff;
+    width:660px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    font-family: simsum;
+ 
+}
+
+#contacto .mensaje{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 6px;
+    border: 2px solid #cecece;
+    color: #a4a4a4;
+    font-size: 18px;
+    padding: 20px;
+    font-family: simsum;
+    
+
+}
+
+#contacto .formulario .nombre{
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid #cecece;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-family: simsum;
+}
+
+#contacto .formulario .apellido{
+    float: left;
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid #cecece;
+    color: #a4a4a4;
+    font-size: 18px;
+    font-family: simsum;
+}
+
+#contacto .formulario textarea{
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#contacto .formulario input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    padding: 16px 48px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: simsum;
+    transition: .3s ease all;
+}
+
+#contacto .formulario input[type="submit"]:hover{
+    border: 1px solid #cecece;
+    color: #000;
+    background: #fff;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 202px;
+    background: #000;
+    text-align: center;
+}
+
+footer .redSocial{
+    width: 80px;
+    height: 60;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 20px;
+    margin-top: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+.twitter{
+ background: #1da1f2;
+ color: #fff;
+}
+
+.facebook{
+    background: #1877f2;
+    color: #fff;
+}
+
+.instagram{
+    background: rgb(241, 200, 200);
+    color: #000;
+}
+
+.youtube{
+    background: #ff0000;
+    color: #fff;
+}
+
+footer p{
+    margin-top: 35px;
+    font-size: 14px;
+    color: #fff;
+    font-family: simsum;
+}
+
+
+/* GO TOP */
+
+.go-top-container{
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    width: 50px;
+    z-index: -1;
+}
+
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #696464c5;
+    border-radius: 25%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button:hover{
+    background: #575252e0;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .3s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: goTop .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes goTop {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    50%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
